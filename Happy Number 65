@@ -1,0 +1,15 @@
+bool isHappy(int n) {
+    int ans=0;
+    while(n!= 1&&n!= 4){
+        int num=n%10;
+        ans+=num*num;
+        n/=10;
+    if(ans==0){
+        return true;
+    }
+    else{
+        return false;
+    }
+    }
+    return 0;
+}
