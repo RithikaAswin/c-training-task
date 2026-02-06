@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+	int a,cnt=0;
+	scanf("%d",&a);
+	while(a){
+	    int num=a%10;
+	    cnt=cnt*10+num;
+	    a/=10;
+	}
+	printf("%d",cnt);
+	return 0;
+}
