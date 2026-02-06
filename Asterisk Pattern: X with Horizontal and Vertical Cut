@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+int main() {
+    int i, j,a;
+    scanf("%d",&a);
+    for (i = 0; i < a; i++) {
+        for (j = 0; j < a; j++) {
+            if (i == j || i + j == a - 1 || i == a / 2 || j == a / 2){
+                printf("* ");
+            }
+            else{
+                printf("  ");
+            }
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
